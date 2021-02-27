@@ -3,7 +3,7 @@
   "default": "cn",
   "data": {
     "title": {
-      "cn": "俄罗斯方块",
+      "cn": "宝儿玩方块",
       "en": "T E T R I S",
       "fr": "T E T R I S",
       "fa": "خانه سازی"
@@ -27,7 +27,7 @@
       "fa": "کیوآر کد"
     },
     "titleCenter": {
-      "cn": "俄罗斯方块<br />TETRIS",
+      "cn": "宝儿玩方块<br />TETRIS",
       "en": "TETRIS",
       "fr": "TETRIS",
       "fa": "خانه سازی"

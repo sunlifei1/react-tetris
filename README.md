@@ -2,10 +2,10 @@
 Please view [README-EN.md](https://github.com/chvin/react-tetris/blob/master/README-EN.md)
 
 ----
-## 用React、Redux、Immutable做俄罗斯方块
+## 用React、Redux、Immutable做宝儿玩方块
 
 ----
-俄罗斯方块是一直各类程序语言热衷实现的经典游戏，JavaScript的实现版本也有很多，用React 做好俄罗斯方块则成了我一个目标。
+宝儿玩方块是一直各类程序语言热衷实现的经典游戏，JavaScript的实现版本也有很多，用React 做好宝儿玩方块则成了我一个目标。
 
 戳：[https://chvin.github.io/react-tetris/](https://chvin.github.io/react-tetris/) 玩一玩！
 
@@ -114,7 +114,7 @@ React 做性能优化时有一个`大招`，就是使用 `shouldComponentUpdate(
 
 在使用原生属性时，为了得出shouldComponentUpdate正确的`true` or `false`，不得不用deepCopy、deepCompare来算出答案，消耗的性能很不划算。而在有了Immutable之后，使用上面的方法对深层结构的比较就变的易如反掌。
 
-对于「俄罗斯方块」，试想棋盘是一个`二维数组`，可以移动的方块则是`形状(也是二维数组)`+`坐标`。棋盘与方块的叠加则组成了最后的结果`Matrix`。游戏中上面的属性都由`Immutable`构建，通过它的比较方法，可以轻松写好`shouldComponentUpdate`。源代码：[/src/components/matrix/index.js#L35](https://github.com/chvin/react-tetris/blob/master/src/components/matrix/index.js#L35)
+对于「宝儿玩方块」，试想棋盘是一个`二维数组`，可以移动的方块则是`形状(也是二维数组)`+`坐标`。棋盘与方块的叠加则组成了最后的结果`Matrix`。游戏中上面的属性都由`Immutable`构建，通过它的比较方法，可以轻松写好`shouldComponentUpdate`。源代码：[/src/components/matrix/index.js#L35](https://github.com/chvin/react-tetris/blob/master/src/components/matrix/index.js#L35)
 
 Immutable学习资料：
 * [Immutable.js](http://facebook.github.io/immutable-js/)
