@@ -63,6 +63,8 @@ const unit = {
     matrix.forEach((m, k) => {
       if (m.every(n => !!n)) {
         clearLines.push(k);
+        // console.log(k);
+        clearLines.push(k + 1);
       }
     });
     if (clearLines.length === 0) {

@@ -161,7 +161,7 @@ const states = {
     store.dispatch(actions.nextBlock());
     states.auto();
     store.dispatch(actions.lock(false));
-    const clearLines = state.get('clearLines') + lines.length;
+    const clearLines = state.get('clearLines') + lines.length + 3;
     store.dispatch(actions.clearLines(clearLines)); // 更新消除行
 
     const addPoints = store.getState().get('points') +
